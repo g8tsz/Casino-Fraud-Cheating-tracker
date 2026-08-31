@@ -1,0 +1,36 @@
+{
+  "cameras": [
+    {
+      "id": "cam-bj12-overhead",
+      "name": "BJ-12 overhead",
+      "tableId": "BJ-12",
+      "location": "Pit 2",
+      "streamType": "snapshot",
+      "streamUrl": "http://192.168.1.100/cgi-bin/snapshot.cgi?channel=1",
+      "active": true,
+      "notes": "Replace with your NVR snapshot or MJPEG URL"
+    },
+    {
+      "id": "cam-pit-wide",
+      "name": "Pit 2 wide angle",
+      "streamType": "mjpeg",
+      "streamUrl": "http://192.168.1.100/cgi-bin/mjpg/video.cgi?channel=2",
+      "active": true
+    },
+    {
+      "id": "cam-vms-hls",
+      "name": "Cloud VMS export",
+      "tableId": "CR-05",
+      "streamType": "hls",
+      "streamUrl": "https://your-vms.example.com/live/camera5/index.m3u8",
+      "active": true
+    },
+    {
+      "id": "cam-embed",
+      "name": "Vendor embed",
+      "streamType": "iframe",
+      "streamUrl": "https://your-vms.example.com/embed/camera/abc123",
+      "active": true
+    }
+  ]
+}
